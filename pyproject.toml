@@ -1,0 +1,24 @@
+[project]
+name = "modeles-generatifs"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Aliaa", email = "aliaachibel8@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.4.6",
+    "torch>=2.15.0",
+    "torcheval>=0.0.7",
+    "torchvision>=0.29.2",
+]
+
+[project.scripts]
+modeles-generatifs = "modeles_generatifs:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
